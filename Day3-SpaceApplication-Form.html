@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceApplication</title>
+    <link rel="stylesheet" href="Day3 SpaceApplication CSS Folder/Day3-SpaceApplication-Form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <!--created by online student .ie-->
+    <!--photos from www.pexels.com-->
+</head>
+
+<body>
+    <header class="Day3-sticky-header">
+        <div class="Day3-wrapper-sud-head">
+            <h1 class="Day3-h1-header"> SPACE SHUTTLE APPLICATION </h1>
+            <h2 class="Day3-h2-header"> <a class="a-header" href="  https://github.com/OnlineStudentHere ">created by
+                    online student .ie</a> </h2>
+        </div>
+    </header>
+
+    <section id="id-section-1" class="Day3-section-1 animate">
+
+        <aside class="desktop-version">
+            <span>DESKTOP</span>
+            <span>VERSION</span>
+            <span>WEBSITE</span>
+        </aside>
+
+        <button class="Day3-button-AppSubmit"> <a href="#id-section-2">Fill out Application</a></button>
+    </section>
+
+    <section id="id-section-2" class="Day3-section-2">
+        <!--    <a href=" #id-section-1 ">back</a>  -->
+
+        <section class="Day3-container-form-wrapper">
+
+            <aside class="desktop-version">
+                <span>DESKTOP</span>
+                <span>VERSION</span>
+                <span>WEBSITE</span>
+            </aside>
+
+            <form class="Day3-form-section-2" action="">
+                <h2 class="h2-form"> <span> APPLICATION </span> <span> <small> * </small> required </span> </h2>
+
+                <div class="input-wrapper">
+                    <label for="name">First Name <small>*</small></label>
+                    <input type="text" id="first-name" pattern="[A-Za-z]{10,}"
+                        title="10 or more characters, only letters allowed" placeholder="first name"
+                        aria-label="min 10-digit first name" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="name">Last Name<small>*</small></label>
+                    <input type="text" id="last-name" minlength="15" maxlength="50" placeholder="last name"
+                        aria-label="min 15-digit last name" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="name">Email<small>*</small></label>
+                    <input type="email" id="email" pattern=".+@example\.com" title="...@example.com" aria-label="email"
+                        placeholder="@email" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="name">Phone<small>*</small></label>
+                    <input type="tel" id="tel" placeholder="+tel" pattern="[+][0-9+]{3}-[0-9]{3}-[0-9]{4}"
+                        title="format +123-456-7890" aria-label="phone number" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="pass">Password <small>*</small></label>
+                    <input type="#" id="pass" name="pass" pattern=".{7,}" title="Seven or more characters"
+                        placeholder="....." aria-label="min 7-digit password" required>
+                </div>
+
+                <div class="age-wrapper">
+                    <label class="label-age">Age</label>
+                    <div class="radio-btn-age">
+                        <input type="radio" id="under_18" value="under_18" name="applicant_age"><label for="under_18"
+                            class="light">Under 18</label>
+                        <input type="radio" id="over_18" value="over_18" name="applicant_age"><label for="over_18"
+                            class="light">18 or Older</label>
+                    </div>
+                </div>
+
+                <div class="input-file-wrapper">
+                    <label for="picture">Choose a profile picture:</label>
+                    <input type="file" id="picture" name="avatar" accept="image/png, image/jpeg" />
+                </div>
+
+                <hr class="hr-form">
+
+                <div class="form-education-wrapper">
+                    <label for="education">Education </label>
+                    <select id="education" name="education">
+                        <option value=""> Please choose an option </option>
+                        <option value="School">School</option>
+                        <option value="College">College</option>
+                        <option value="University">University</option>
+                    </select>
+                </div>
+
+                <div class="form-education-wrapper">
+                    <label for="education"> Space experience </label>
+                    <select id="education" name="education">
+                        <option value=""> Please choose an option </option>
+                        <option value="space-never">I have never been to Space</option>
+                        <option value="space-one-time">I have been to Space once</option>
+                        <option value="space-several-times">I have been to Space a few times</option>
+                        <option value="space-now">I am currently in Space</option>
+                    </select>
+                </div>
+
+                <div class="interests-wrapper">
+                    <label class="label-interests">Interests:</label>
+                    <input type="checkbox" id="engineering" value="interest_engineering" name="user_interest"><label
+                        for="engineering">Engineering</label>
+                    <br>
+                    <input type="checkbox" id="sport" value="interest_sport" name="user_interest"><label
+                        for="sport">Sport</label>
+                    <br>
+                    <input type="checkbox" id="astronomy" value="interest_astronomy" name="user_interest"><label
+                        for="astronomy">Astronomy</label>
+                </div>
+
+                <textarea class="textarea-section-2" name="" id="" cols="30" rows="4"
+                    placeholder="Write something..."></textarea>
+
+                <hr class="hr-invisible">
+
+                <button class="submit-button">SUBMIT APPLICATION</button>
+
+            </form>
+        </section>
+
+        <a class="Day3-a-back-home-page" href=" #id-section-1 "> <span> &#8593; </span> TO HOME PAGE</a>
+
+        <footer class="Day3-footer-section-2"> <a href="  https://github.com/OnlineStudentHere "> created by online
+                student .ie </a> </footer>
+    </section>
+</body>
+
+</html>
